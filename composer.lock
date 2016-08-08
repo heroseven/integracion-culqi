@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "a4be8a840e2c60a325b1bf6c76cdada5",
+    "content-hash": "3b32ad7848f553b2e34b1021dca10774",
+    "packages": [
+        {
+            "name": "culqi/culqi-php",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/culqi/culqi-php.git",
+                "reference": "a715a84b3a5f2a553385cc5bc57043b763dee216"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/culqi/culqi-php/zipball/a715a84b3a5f2a553385cc5bc57043b763dee216",
+                "reference": "a715a84b3a5f2a553385cc5bc57043b763dee216",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-curl": "*",
+                "ext-mcrypt": "*",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.1-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Culqi",
+                    "homepage": "https://github.com/culqi"
+                }
+            ],
+            "description": "Librería PHP oficial para la integración de Culqi, pasarela de pagos.",
+            "homepage": "https://culqi.com",
+            "keywords": [
+                "api",
+                "culqi",
+                "pagos",
+                "payments",
+                "peru",
+                "php"
+            ],
+            "time": "2016-07-27 01:44:11"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
