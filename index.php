@@ -119,44 +119,17 @@ $(document).ready(function(){
         // Cierra el formulario de pago de Culqi.
         checkout.cerrar();
         
-          $.ajax({
-                    url: "respuesta.php",
-                    type: "POST",
-                    contentType: "application/json",
-                    data: JSON.stringify(
-                            {
-                                'respuesta' : checkout.respuesta
-                            }),
-                    success: function(data){
-                        var obj = JSON.parse(data);
-                         alert('exito');
-                        var tipo_respuesta_venta = obj["codigo_respuesta"];
-                        if (tipo_respuesta_venta == "venta_exitosa") {
-                            alert('exito');
-                        } else if (tipo_respuesta_venta == "venta_expirada") {
-                            alert('paso algo');
-                        } else if (tipo_respuesta_venta == "error") {
-                             alert('paso algo');
-                        } else if (tipo_respuesta_venta == "parametro_invalido") {
-                              alert('paso algo');
-                        } else {
-                            // Brindale un mensaje amigable al cliente (Puedes usar el mensaje que Culqi recomienda o usar uno tuyo) e invitalo a reintentar la compra.
-                            checkout.cerrar();
-                        }
-                    },
-                    error:function( ){
-                    }
+        var json = JSON.stringify({
+            informacionDeVentaCifrada: checkout.respuesta
         });
         
+        post('/respuesta2.php', json);
+    
         
         
         };
     
-    
-   /* $("button").click(function(){
-        $("p").hide();
-    });*/
-      
+
             
     
 });
